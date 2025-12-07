@@ -9,3 +9,10 @@
 4. Bagaimana keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child?
 
 5. Mengapa pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member?
+
+Jawab
+1.Karena class Member adalah "anak" (subclass), jadi data-data dasar milik "induk" (Customer) wajib diisi/diinisialisasi terlebih dahulu agar objeknya valid.
+2.Agar efisien dan tidak perlu mengetik ulang kode yang sudah ada. Kita cukup panggil method milik Parent untuk menampilkan info dasar, lalu tinggal tambahkan baris kode baru untuk info tambahan milik Member.
+3.Saat kita ingin memperluas logika, bukan menggantinya total. Contoh: Di Parent ada method hitung GajiPokok. Di Child, kita panggil super.hitungGaji() untuk mengambil nilai pokoknya, lalu hasilnya kita tambah dengan bonus/tunjangan.
+4.super berfungsi sebagai penunjuk spesifik. Jika Child dan Parent punya nama variabel yang sama (misal: nama), maka super.nama akan mengambil variabel milik Parent, sedangkan this.nama mengambil milik Child.
+5.Untuk meminimalisir human error(ada yang ketinggalan saat copy) dan juga agar lebih efektif. misal jika kita punya lebih dari 1 class yang memerlukan atribut class parent,maka pewarisan akan sangat efektif.
