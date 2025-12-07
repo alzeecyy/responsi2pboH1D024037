@@ -7,3 +7,6 @@ Apa yang terjadi jika kita mencoba mengubah nilai suatu konstanta setelah objek 
 Bagaimana cara mendefinisikan konstanta dalam bahasa Java?
 
 Jawaban
+1. Perbedaan fungsi dan prosedur itu ada di nilai baliknya, di mana fungsi bisa mengembalikan nilai lewat return, sedangkan prosedur cuma menjalankan serangkaian instruksi tanpa mengembalikan nilai (void).
+2. Konstanta itu penting buat variabel yang nilainya sudah tetap dari awal. Kalau kita coba ubah nilainya, program bakal ngasih error seperti "cannot assign a value to final variable".
+3. Cara mendefinisikan variabel konstanta adalah dengan nulis keyword final sebelum tipe data dan nama variabel, contohnya: final double faktor.
