@@ -5,3 +5,10 @@ Jawablah pertanyaan berikut:
 3. Apa perbedaan override dan overload?
 4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
 5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+Jawab
+1.kondisi dimana 1 referensi bisa punya banyak bentuk objek. override bekerja dengan cara menuliskan lagi nama method sama yang ada pada super class, tapi ada penambahan atau perubahan lagi di class anak jadi intinya override itu method yang sama dengan super class tapi di ubah di class anak
+2.Karena menerapkan konsep Pewarisan (Inheritance). MesinMotor dan MesinTraktor adalah subclass dari DefaultMesin, sehingga mereka kompatibel dan bisa disimpan dalam array bertipe superclass-nya.
+3.Overloading Terjadi dalam satu kelas, nama method sama tetapi parameter harus berbeda, sementara Overriding Terjadi antara superclass dan subclass, nama method dan parameter harus sama persis (hanya isi/body method yang diubah).
+4.lebih efektif. jadi walaupun banyak variasi tipe mesin, tapi cukup dengan tipe data pada class parent, karena atribut awalnya sama.
+5.java melihat objekmnya, kalau objeknya class anak maka method yang di jalankan adalah class anaknya.
