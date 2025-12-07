@@ -8,3 +8,8 @@ Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi dat
 Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
 
 Jawaban
+1. Kondisi di mana satu class punya banyak konstruktor disebut constructor overloading. Jadi namanya sama, tapi parameter yang dipakai harus berbeda.
+2. Java akan otomatis milih konstruktor yang paling cocok berdasarkan nama, jumlah parameter, dan tipe data yang dikirim.
+3. Getter biasanya dipakai buat ngambil nilai variabel, sedangkan setter dipakai buat mengubah nilai variabel, khususnya yang dibuat private supaya tetap terjaga prinsip enkapsulasi.
+4. Enkapsulasi adalah kondisi di mana atribut atau method dibungkus dengan akses private, sehingga tidak bisa diakses langsung dari luar class kecuali lewat method getter dan setter.
+5. Konstruktor tidak boleh punya return karena kalau ada return, Java akan menganggapnya sebagai method biasa. Selain itu, konstruktor otomatis dipanggil saat objek baru dibuat.
