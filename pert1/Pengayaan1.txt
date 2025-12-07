@@ -10,3 +10,5 @@ Jawaban
 1. Perbedaan fungsi dan prosedur itu ada di nilai baliknya, di mana fungsi bisa mengembalikan nilai lewat return, sedangkan prosedur cuma menjalankan serangkaian instruksi tanpa mengembalikan nilai (void).
 2. Konstanta itu penting buat variabel yang nilainya sudah tetap dari awal. Kalau kita coba ubah nilainya, program bakal ngasih error seperti "cannot assign a value to final variable".
 3. Cara mendefinisikan variabel konstanta adalah dengan nulis keyword final sebelum tipe data dan nama variabel, contohnya: final double faktor
+4. Kalau kita berusaha mengubah nilai konstanta, program akan langsung memunculkan kesalahan saat proses kompilasi, karena variabel final memang tidak bisa diubah setelah nilainya ditetapkan. Misalnya, ketika sebuah nilai tetap seperti π sudah ditentukan, lalu dicoba diganti dengan nilai lain, Java akan menolak dan menampilkan pesan error seperti cannot assign a value to final variable.
+5. Konstanta didefinisikan dengan menambahkan keyword final sebelum tipe data dan nama variabel, misalnya dengan menuliskan sebuah variabel bertipe double yang diberi sifat final agar nilainya tidak bisa diubah. final double PHI = 3.14;
