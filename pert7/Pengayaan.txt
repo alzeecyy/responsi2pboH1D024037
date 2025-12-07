@@ -6,3 +6,10 @@ Setelah menyelesaikan kode, jawab pertanyaan berikut:
 3. Apa tujuan penggunaan keyword "implements" pada sebuah class?
 4. Apakah sebuah class dapat mengimplementasikan lebih dari satu interface? Jelaskan dan berikan contoh sederhana.
 5. Jika sebuah class mengimplementasikan interface, apa yang terjadi jika class tersebut tidak mengimplementasikan semua method dari interface tersebut?
+
+Jawab
+1.Class Biasa berisi kode lengkap dan variabel, sedangkan Interface hanya berisi daftar judul method yang masih kosong.
+2.Class Biasa berisi kode lengkap dan variabel, sedangkan Interface hanya berisi daftar judul method yang masih kosong.
+3.Untuk mendaftarkan class agar patuh pada Interface, sehingga wajib mengisi (override) semua method kosongnya.
+4.Bisa. Satu class boleh punya banyak interface. Contoh: Class Katak implements HewanDarat dan HewanAir.
+5.error, biasanya ada tulisan .. not declared...
